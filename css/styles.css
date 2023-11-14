@@ -64,7 +64,7 @@ justify-content: center;
 align-items: center;
 padding: 20px 20px;}
 .current-text{font-style: italic;}
-.background-main{background: url("/images/background-main.png");
+.background-main{background: url("../images/background-main.png");
 width: 100%;
 height: 640px;
 background-size: cover;
