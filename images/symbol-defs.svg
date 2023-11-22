@@ -22,5 +22,9 @@
             <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round"
                 stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.4" d="M10.667 9.334h12v12"></path>
         </symbol>
+        <symbol id="icon-Divider" viewBox="0 0 19456 32">
+            <path fill="none" stroke="#d9d9d6" style="stroke: var(--color1, #d9d9d6)" stroke-linejoin="miter"
+                stroke-linecap="butt" stroke-miterlimit="4" stroke-width="16" d="M0 16h19456"></path>
+        </symbol>
     </defs>
 </svg>

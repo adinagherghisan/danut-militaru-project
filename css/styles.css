@@ -9,7 +9,7 @@ body {
     --font-family: "Outfit";
     --heading-font-family:"Playfair Display"
 }
-
+h1, h2,p{color: #696969;}
 /*Header-section*/
 .header-section-tablet{display: none;}
 .logo h3{font-family: var(--heading-font-family);
@@ -70,6 +70,8 @@ height: 640px;
 background-size: cover;
 background-repeat: no-repeat;}
 /*About-us-section*/
+.about-us-desktop{display: none;}
+.about-us-tablet{display: none;}
 .heading-with-dash{display: flex;
 flex-direction: row;
 align-items: center;
@@ -89,8 +91,8 @@ gap:16px}
 height: 1px;
 width: 64px;
 border-radius: 5px;}
-#about-us{padding: 30px 20px;}
-#about-us h2{font-family: var(--heading-font-family);
+.about-us-mobile{padding: 30px 20px;}
+.about-us-mobile h2{font-family: var(--heading-font-family);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -103,8 +105,10 @@ margin-top: 80px;
 justify-content: center;}
 .second-img{margin-top: 42px;}
 .sub-article-about{display: flex;
-flex-direction: column;}
-.sub-article-about ul{padding: 0;}
+flex-direction: column;
+justify-content: center;}
+.sub-article-about ul{padding: 0;
+}
 .sub-article-about li{font-family: var(--heading-font-family);
     font-size: 45px;
     font-style: normal;
@@ -122,6 +126,7 @@ flex-direction: column;}
      text-transform: uppercase;
      font-style: italic;
     }
+    .dash-svg{width: 100%;}
 
 @media screen and (min-width: 768px) {
     .header-section-tablet{display: flex;
@@ -161,4 +166,157 @@ gap: 20px;}
                font-size: 28px;
            }
          .header-section-tablet .btn-nav a{color: #fff;}
+         .tablet h1{font-family: var(--heading-font-family);
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 72px;
+            text-align: center;}
+         .about-us-mobile{display: none;}
+         .about-us-desktop{display: none;}
+         .about-us-tablet{display: block;}
+                 .about-us-tablet .heading-with-dash h3 {
+                     font-family: var(--font-family);
+                     font-size: 20px;
+                     font-style: normal;
+                     font-weight: 600;
+                     line-height: 20px;
+                     letter-spacing: 1.4px;
+                     color: #996830;
+                     text-transform: uppercase;
+                     -webkit-text-stroke: 1px #996830;
+                     color: #fff;
+                 }
+        
+                         .about-us-tablet .heading-with-dash .dash {
+                     background-color: #996830;
+                     height: 1px;
+                     width: 64px;
+                     border-radius: 5px;
+                 }
+        
+                 .about-us-tablet {
+                     padding: 90px 40px;
+                 }
+        
+                 .about-us-tablet h2 {
+                     font-family: var(--heading-font-family);
+                     font-size: 40px;
+                     font-style: normal;
+                     font-weight: 400;
+                     line-height: 72px;
+                     text-align: center;
+                 }
+        
+                 .about-us-tablet   .about-us-img {
+                     display: flex;
+                     flex-direction: row;
+                     gap: 10px;
+                     margin-top: 80px;
+                     justify-content: center;
+                 }
+        
+                .about-us-tablet .second-img {
+                     margin-top: 42px;
+                 }
+        
+                 .about-us-tablet .sub-article-about {
+                     display: flex;
+                     flex-direction: row;
+                     justify-content: center;
+                     margin-top: 96px;
+                 }
+        
+                                .about-us-tablet  .sub-article-about ul {
+                     padding: 0;
+                     display: flex;
+                     flex-direction: row;
+                     justify-content: center;
+                     align-items: center;
+                     gap: 40px;
+                 }
+        
+                                 .about-us-tablet .sub-article-about li {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap:15px;
+                     font-family: var(--heading-font-family);
+                     font-size: 60px;
+                     font-style: normal;
+                     font-weight: 400;
+                     line-height: 60px;
+                     list-style: none;
+                     -webkit-text-stroke: 1px#987654;
+                     color: #fff;
+                 }
+        
+                                .about-us-tablet  .text-clients {
+                     font-family: var(--font-family);
+                     font-size: 18px;
+                     font-style: normal;
+                     font-weight: 400;
+                     line-height: 20px;
+                     letter-spacing: 0.7px;
+                     text-transform: uppercase;
+                     font-style: italic;
+                 }
 }
+@media screen and (min-width: 1158px) {
+    .desktop h1{font-family: var(--heading-font-family);
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 72px;
+        letter-spacing: -1.5px;
+        text-align: center;}
+    .about-us-mobile{display: none;}
+    .about-us-tablet{display: none;}
+    .about-us-desktop{display: block;}
+    .about-us-desktop .text-with-photo-about{display: flex;
+    flex-direction: row;
+gap: 40px;}
+    .about-us-desktop{padding: 120px 100px;}
+    .about-us-desktop h2{font-family:var(--heading-font-family);
+        color: #696969;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 72px;
+        letter-spacing: -1.5px;
+    text-align: center;}
+    .about-us-desktop .sub-article-about{display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top:120px;}
+    .about-us-desktop .sub-article-about ul{padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;}
+                .about-us-desktop .sub-article-about li {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    font-family: var(--heading-font-family);
+                    font-size: 60px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 60px;
+                    list-style: none;
+                    -webkit-text-stroke: 1px#987654;
+                    color: #fff;
+                }
+        
+                .about-us-desktop .text-clients {
+                    font-family: var(--font-family);
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px;
+                    letter-spacing: 0.7px;
+                    text-transform: uppercase;
+                    font-style: italic;
+                }
+}
+    
